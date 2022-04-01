@@ -1,0 +1,17 @@
+.menu-icon{
+    height: 30px;
+    width: 30px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+}
+.navigation a{
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 10px;
+}
