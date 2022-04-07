@@ -1,4 +1,4 @@
-import { Button } from 'bootstrap';
+import { Button } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
 import { Container, FormControl, InputGroup } from 'react-bootstrap';
 import Meals from '../Meals/Meals';
@@ -22,7 +22,7 @@ const Home = () => {
             <Container>
                 <InputGroup className="mt-5">
                     <FormControl onChange={searchMeal} placeholder="Search Food" aria-describedby="basic-addon2"/>
-                    {/* <Button variant="outline-secondary" id="button-addon2">search</Button> */}
+                    <Button variant="outline-secondary" id="button-addon2">search</Button>
                 </InputGroup>
                 <div className="row">
                     {

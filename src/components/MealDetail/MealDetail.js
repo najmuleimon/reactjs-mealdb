@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const MealDetail = () => {
@@ -22,8 +22,10 @@ const MealDetail = () => {
                 <div className="col-md-6">
                     <h2>{mealDetail.strMeal}</h2>
                     <p>{mealDetail.strInstructions}</p>
-                    <a href={mealDetail.strYoutube} target="_blank">youtube</a> <br />
-                    <button onClick={() => navigate('/')}>Back</button>
+                    <a href={mealDetail.strYoutube} target="_blank" rel="noreferrer">
+                        <Button>Youtube</Button>
+                    </a> <br />
+                    <Button onClick={() => navigate('/')} className="mt-3">Back</Button>
                 </div>
             </div>
         </Container>
